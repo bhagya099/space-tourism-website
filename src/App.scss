@@ -1,0 +1,144 @@
+@import 'style/variables.scss';
+
+// google font 
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+body {
+    background-image: url('./assets/home/background-home-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Bellefair', serif, 'Helvetica Neue', sans-serif;
+}
+
+.nav {
+    margin: 50px;
+
+    &-logo__image {
+        width: 48px;
+        height: 48px;
+    }
+
+    ul {
+        width: 830px;
+        height: 96px;
+        list-style-type: none;
+        background: rgba(255, 255, 255, 0.04);
+        --webkit-backdrop-filter: blur(40.774227142333984px);
+        backdrop-filter: blur(40.774227142333984px);
+
+        li {
+            display: inline-block;
+            font-family: Barlow Condensed;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 2.7px;
+            padding: 30px;
+            margin-top: 9px;
+
+            a {
+                color: $white-color;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.space {
+    color: $white-color;
+}
+
+.home-page {
+
+    &__text {
+        text-transform: uppercase;
+        margin-top:200px;
+        margin-left:365px;
+        width:450px;
+        height: 382px;
+
+        h1 {
+            font-size: 150px;
+            margin: 30px 0;
+            line-height: normal;
+            color: $heading-color;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-family: 'Barlow Condensed';
+            letter-spacing: 1.7px;
+            color: $heading-color;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 32px;
+        }
+
+    }
+
+    &__button {
+        margin: 320px 200px 0 155px;
+
+        .btn {
+            width: 274px;
+            height: 274px;
+            background-color: $white-color;
+            border-radius: 50%;
+            color: $btn-text-color;
+            font-size: 32px;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+.destination {
+
+    max-width: 900px;
+    margin: 0 auto;
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h1,h5 {
+        color: $heading-color;
+    }
+
+    &-image {
+        margin-top:200px;
+        margin-left:80px;
+        margin-right: 180px;
+        max-width: 608px;
+    }
+
+    &-list {
+        max-width: 450px;
+        ul {
+            li {
+                display: inline-block;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 1.7px;
+                padding: 10px;
+                margin-top: 9px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.planet {
+    max-width: 450px;
+
+    h1 {
+        font-size: 100px;
+        text-transform: uppercase;
+    }
+}
